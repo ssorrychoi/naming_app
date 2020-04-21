@@ -18,7 +18,7 @@ class _RandomListState extends State<RandomList> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Naming App'),
+        title: Text('Eng Naming App'),
         actions: [
           IconButton(icon: Icon(Icons.assignment),onPressed: (){
             Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SavedList()));

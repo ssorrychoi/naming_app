@@ -7,8 +7,9 @@ class Bloc{
 
   final _savedController = StreamController<Set<WordPair>>.broadcast();
 
+  /// 저장된 stream
   get savedStream => _savedController.stream;
-
+  /// stream을 saved에 추가.
   get addcurrentSaved => _savedController.sink.add(saved);
 
   addToOrRemoveFromSavedList(WordPair item){
